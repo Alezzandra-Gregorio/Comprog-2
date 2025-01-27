@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv){
+	int num[5], x, sum = 0;
+	
+	cout << "Enter 5 Integers in an Array called num: \n";
+	for (x = 0; x <= 4; x++){
+		cout << "num[" << x << "] = ";
+		cin >> num[x];
+		sum = sum + num[x];
+	}
+	cout << "Sum of all integers entered = " << sum;
+	
+	return 0;	
+}
