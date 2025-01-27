@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int num[10];
+    int x, rep = 0;
+
+    cout << "Enter 10 numbers \n";
+    for (int a = 0; a < 10; a++) {
+        cout << "num[" << a << "] = ";
+        cin >> num[a];
+    }
+
+    cout << "Enter a number: ";
+    cin >> x;
+
+    for (int a = 0; a < 10; a++) {
+        if (num[a] == x) {
+            rep++;
+        }
+    }
+
+    cout << "Times of number " << x << " present in the array:  " << rep << endl;
+
+    return 0;
+}
